@@ -1,3 +1,15 @@
+macro_lock_macos: macro_lock_macos{
+compatible = "zmk,behavior-macro";
+label = "macro_lock_macos";
+#binding-cells = <0>;
+bindings = <&sk LCTRL>, <&sk LEFT_COMMAND>, <&kp Q>;
+};
+macro_vim_write_quit: macro_vim_write_quit{
+compatible = "zmk,behavior-macro";
+label = "macro_vim_write_quit";
+#binding-cells = <0>;
+bindings = <&kp COLON>, <&kp W>, <&kp Q>, <&kp ENTER>;
+};
 macro_vim_q_force_all: macro_vim_q_force_all{
 compatible = "zmk,behavior-macro";
 label = "macro_vim_q_force_all";
@@ -27,12 +39,6 @@ compatible = "zmk,behavior-macro";
 label = "macro_vim_write";
 #binding-cells = <0>;
 bindings = <&kp COLON>, <&kp W>, <&kp ENTER>;
-};
-macro_lock_macos: macro_lock_macos{
-compatible = "zmk,behavior-macro";
-label = "macro_lock_macos";
-#binding-cells = <0>;
-bindings = <&kp LCTRL>, <&kp RIGHT_COMMAND>, <&kp Q>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
